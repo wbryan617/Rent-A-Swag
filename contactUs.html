@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="author" content="Bryan Winata">
 		<meta name="description" content=" We want you to experience a one-of-a-kind rental service in the best way possible, so if you have any questions you want answered, fill out this form and our team will reach out to you!">
-		<title>Rent-A-Swag Contact Us</title>
+		<title>Rent-A-Swag Swag</title>
 	</head>
 
 	<body>
@@ -20,9 +20,41 @@
 			<img src="rentaswaglogo.png" alt="Rent-A-Swag Logo with an olive green background, and different items of clothing">
 		</header>
 		<main>
-			<section>
+		  <section>
 				<h2>Questions? Comments? Concerns?</h2>
 				<img src="rackofshirts.jpg" alt="Rack of black shirts with lighting to the left">
+				<p>Please use the contact form provided to get into contact with our support team, and we will provide answers to any of your questions!</p>
+				<form id="contact" method="post" action="https://webdevbasics.net/scripts/demo.php">
+                    <label for="myName">Name:*</label>
+                    <input type="text" name="myName" id="myName" required="required" placeholder="Enter first and last name">
+
+                    <label for="myPhone">Phone*:</label>
+                    <input type="tel" name="myPhone" id="myPhone" required="required" placeholder="Phone">
+
+                    <label for="myEmail">Email*:</label>
+                    <input type="email" name="myEmail" id="myEmail" required="required" placeholder="you@domain.com">
+
+                    <fieldset>
+                        <legend>Preferred Method of Contact*:</legend>
+                        <input type="radio" name="prefContact" id="prefPhone" value="Phone">
+                        <label for="prefPhone">Phone</label>
+                        <input type="radio" name="prefContact" id="prefEmail" value="Email">
+                        <label for="prefEmail">Email</label>
+                    </fieldset>
+
+                    <label for="myComments" id="comments">Comments:</label>
+                    <textarea name="myComments" id="myComments" rows="4" cols="53"></textarea>
+
+                    <div id="myButtons">
+                        <input type="reset" id="myReset" value="Reset">
+                        <input type="submit" id="mySubmit" value="Submit">
+                    </div>
+                </form>
+			</section>
+			<section>
+				<h2>Meet the Owner: Tom Haverford</h2>
+				<img src="https://via.placeholder.com/1080x1350" alt="Placeholder for Tom Haverford portrait">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum leo ac tempor facilisis. Etiam volutpat sollicitudin felis id finibus. Quisque gravida ac urna vitae vehicula. Morbi purus eros, blandit fringilla posuere laoreet, suscipit in leo. Vivamus nec magna fermentum, tempus quam vitae, consequat lectus. Donec maximus eu est eget volutpat. Mauris euismod purus lorem. Ut non lacus non elit ultricies porta. Ut lobortis finibus ex, vel semper dui auctor a. Cras malesuada euismod dui. Praesent ac felis eget eros porttitor rutrum pulvinar et elit.</p>
 			</section>
 		</main>
 		<footer>
